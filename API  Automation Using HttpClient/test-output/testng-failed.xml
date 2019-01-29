@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mfino.test.HttpPostTest">
+      <class name="com.mfino.test.HttpGetTest">
         <methods>
-          <include name="postApi"/>
+          <include name="getTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.mfino.test.HttpPostTest -->
+      </class> <!-- com.mfino.test.HttpGetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

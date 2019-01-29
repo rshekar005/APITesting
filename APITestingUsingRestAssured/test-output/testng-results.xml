@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4788" started-at="2019-01-29T06:40:12Z" finished-at="2019-01-29T06:40:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4788" started-at="2019-01-29T06:40:12Z" finished-at="2019-01-29T06:40:17Z">
+      <class name="com.raja.test.GetRequest">
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:com.raja.test.GetRequest@8bd1b6a]" name="getRequest" duration-ms="4729" started-at="2019-01-29T06:40:12Z" finished-at="2019-01-29T06:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequest -->
+      </class> <!-- com.raja.test.GetRequest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

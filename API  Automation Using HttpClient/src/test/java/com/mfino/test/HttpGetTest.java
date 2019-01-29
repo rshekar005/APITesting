@@ -1,5 +1,8 @@
 package com.mfino.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -17,6 +20,8 @@ import com.mfino.restclient.RestClient;
 import com.mfino.util.TestUtil;
 
 public class HttpGetTest extends TestBase{
+
+
 
 	public HttpGetTest() throws IOException {
 		super();
@@ -48,7 +53,7 @@ public class HttpGetTest extends TestBase{
 		int statusCode=httpresponse.getStatusLine().getStatusCode();
 		System.out.println("Status code of "  +completeurl+ "is  " +statusCode);
 		
-		Assert.assertEquals(statusCode, 200);
+		AssertJUnit.assertEquals(statusCode, 200);
 		//Response in string
 		String stringresponse= EntityUtils.toString(httpresponse.getEntity(),"UTF-8");
 		System.out.println("Response of a get Request is " +stringresponse);//It returns String Object

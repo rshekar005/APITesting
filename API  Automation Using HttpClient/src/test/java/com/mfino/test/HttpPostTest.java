@@ -1,5 +1,7 @@
 package com.mfino.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -27,6 +29,7 @@ public class HttpPostTest extends TestBase{
 	String serviceurl;
 	String completeurl;
 	CloseableHttpResponse httpresponse;
+	
 	@BeforeMethod
 	public void setUp() throws IOException
 	{
@@ -55,10 +58,10 @@ public class HttpPostTest extends TestBase{
 		//Path of a JSON file
 		obj.writeValue(new File("D:/API  Automation/RestClient/src/main/java/com/mfino/data/user.json"), users);
 		
-		//obj to JSON
+	/*	//obj to JSON
 		String responseinstring=obj.writeValueAsString(users);
 		System.out.println(responseinstring);
-		
+		*/
 		
 		
 	}

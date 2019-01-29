@@ -1,5 +1,6 @@
 package com.mfino.util;
 
+import org.testng.annotations.Test;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -7,6 +8,7 @@ public class TestUtil {
 
 	//JSONObject -- Contains json response
 	// jpath contains key
+	@Test
 	public String  testutil(JSONObject responsejson, String jpath)
 	{
 		Object obj=responsejson;//response gets stored in obj object
